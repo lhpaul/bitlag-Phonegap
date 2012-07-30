@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Change this if you want to allow scaling -->
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <title>BitLag</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <script type="text/javascript" charset="utf-8" src="javascripts/jquery.js"></script>
+    <script src="jquery.mobile-1.0.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+    <script type="text/javascript" charset="utf-8" src="javascripts/core.js"></script>
+    <script type="text/javascript" charset="utf-8" src="javascripts/auth.js"></script>
+     <script type="text/javascript" charset="utf-8" src="javascripts/events.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+
+      function onBodyLoad()
+      {
+        document.addEventListener("deviceready",onDeviceReady,false);
+      }
+      function onDeviceReady()
+      {
+        Core.events.loadContent.run("public/events");
+      }
+
+    </script>
+  </head>
+  <body onload="onBodyLoad()">
+    <div data-role="page" id="index" data-theme="a">
+      <div data-role="header" data-id="searchHead">
+        <h1>BitLag</h1>
+        <a href="#" id="logout" data-icon="forward" class="ui-btn-right">Logout</a>
+        <div data-role="navbar" id="eventsnav" >
+    <ul>
+          <li>
+            <a href="#" id="events1" data-transition="fade" >My Events</a>
+          </li>
+          <li>
+            <a href="#" id="events2" data-transition="fade" class="ui-btn-active">Public Events</a>
+          </li>
+        </ul>
+    </div>
+    </div><!-- /header -->
+     <div data-role="content" >
+    <div class="content-primary">
+      <ul id="events_list" data-role="listview" data-theme="a" data-dividertheme="e" data-filter="true" data-filter-theme="a" data-filter-placeholder="Search events..." data-split-icon="gear" data-split-theme="c">
+    </ul>
+    </div><!-- /content -->
+    </div>
+    <div data-role="footer" class="nav-glyphish-example" data-position="fixed" data-theme="c">
+    <div data-role="navbar" class="nav-glyphish-example" data-grid="b" >
+    <ul>
+          <li>
+            <a href="#" id="profile" data-icon="custom" data-transition="fade">Profile</a>
+          </li>
+          <li>
+            <a href="#" id="events" data-icon="custom" data-transition="fade"  class="ui-btn-active">Events</a>
+          </li>
+          <li>
+            <a href="#" id="groups" data-icon="custom" data-transition="fade">Groups</a>
+          </li>
+        </ul>
+    </div>
+  </div><!-- /footer -->
+    </div>
+  </body>
+</html>

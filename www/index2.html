@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Change this if you want to allow scaling -->
+  <meta name="viewport" content="width=default-width; user-scalable=no" />
+
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+  <title>BitLag</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <script type="text/javascript" charset="utf-8" src="javascripts/jquery.js"></script>
+  <script src="jquery.mobile-1.0.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+  <script type="text/javascript" charset="utf-8" src="javascripts/core.js"></script>
+  <script type="text/javascript" charset="utf-8" src="javascripts/auth.js"></script>
+  <!-- login -->
+  <script type="text/javascript" charset="utf-8" src="javascripts/login.js"></script>
+  <!-- profile -->
+  <script type="text/javascript" charset="utf-8" src="javascripts/profile.js"></script>
+  <!-- event list -->
+  <script type="text/javascript" charset="utf-8" src="javascripts/events.js"></script>
+  <!-- calendar -->
+  <script type="text/javascript" charset="utf-8" src="javascripts/groups.js"></script>
+
+
+  <script type="text/javascript" charset="utf-8">
+
+      function onBodyLoad()
+      {
+        document.addEventListener("deviceready",onDeviceReady,false);
+      }
+      function onDeviceReady()
+      {
+        //alert("Esta");
+          //alert(Core.auth.authToken.get())
+          //alert(Core.auth.isAuthenticated());
+      }
+
+    </script>
+</head>
+<body onload="onBodyLoad()">
+<!-- start login page -->
+<div data-role="page" data-theme="a" id="login-pg">
+      <div data-role="header"> 
+        <h1>BitLag</h1> 
+      </div>
+    <div data-role="content" >
+    <div class="content-primary">
+      <form accept-charset="UTF-8" action="login" method="post" id="login">
+        <div class='form_errors'></div>
+            <label for="Your_Email:" class="ui-hidden-accessible">Your email:</label>
+            <input id="user_email" name="user[email]" type="text" placeholder="Email"/>
+            <label for="password" class="ui-hidden-accessible">Password:</label>
+            <input id="user_password" name="user[password]" type="password" placeholder="Password"/>
+            <input id="user_session_submit" name="commit" type="submit" value="Sign in" />
+      </form>
+    </div>
+  </div>
+  </div>
+<!-- end login page -->
+
+<!-- start map page -->
+  <div data-role="page" id="map-pg" data-theme="a">
+    <div data-role="header" data-id="searchHead">
+      <h1>BitLag</h1>
+      <a href="#" id="logout" data-icon="forward" class="ui-btn-right">Logout</a>
+    </div>
+    <!-- /header -->
+    <div data-role="content" >
+      <!-- <p>&nbsp;</p> -->
+      <div class="content-primary">
+        <h1>Profile</h1>
+        <p>
+          <!-- <img alt="Perfil" src="localhost/assets/users/1/small/" /> -->
+        </p>
+
+        <p id="email"> 
+          <b>Email:</b>
+        </p>
+
+        <p id="fname">
+          <b>First Name:</b>
+        </p>
+
+        <p id="lname">
+          <b>Last Name:</b>
+        </p>
+
+        <p id="birth_date">
+          <b>Date of brith:</b>
+        </p>
+      </div>
+      <!-- /content --> </div>
+    <div data-role="footer" class="nav-glyphish-example" data-position="fixed" data-theme="c">
+      <div data-role="navbar" class="nav-glyphish-example" data-grid="b" >
+        <ul>
+          <li>
+            <a href="#" id="profile" data-icon="custom" class="ui-btn-active" data-transition="fade">Profile</a>
+          </li>
+          <li>
+            <a href="#" id="events" data-icon="custom" data-transition="fade">Events</a>
+          </li>
+          <li>
+            <a href="#" id="groups" data-icon="custom" data-transition="fade">Groups</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /footer --> </div>
+    <!-- end map page -->
+
+    <!-- start event list page -->
+    <div data-role="page" id="list-pg" data-theme="a">
+      <div data-role="header" data-id="searchHead">
+        <h1>BitLag</h1>
+        <a href="#" id="logout" data-icon="forward" class="ui-btn-right">Logout</a>
+        <div data-role="navbar" id="eventsnav" >
+    <ul>
+          <li>
+            <a href="#" id="events1" data-transition="fade" class="ui-btn-active">My Events</a>
+          </li>
+          <li>
+            <a href="#" id="events2" data-transition="fade">Public Events</a>
+          </li>
+        </ul>
+    </div>
+    </div><!-- /header -->
+     <div data-role="content" >
+    <div class="content-primary">
+      <ul id="events_list" data-role="listview" data-theme="a" data-dividertheme="e" data-filter="true" data-filter-theme="a" data-filter-placeholder="Search events..." data-split-icon="gear" data-split-theme="c">
+    </ul>
+    </div><!-- /content -->
+    </div>
+    <div data-role="footer" class="nav-glyphish-example" data-position="fixed" data-theme="c">
+    <div data-role="navbar" class="nav-glyphish-example" data-grid="b" >
+    <ul>
+          <li>
+            <a href="#" id="profile" data-icon="custom" data-transition="fade">Profile</a>
+          </li>
+          <li>
+            <a href="#" id="events" data-icon="custom" data-transition="fade"  class="ui-btn-active">Events</a>
+          </li>
+          <li>
+            <a href="#" id="groups" data-icon="custom" data-transition="fade">Groups</a>
+          </li>
+        </ul>
+    </div>
+  </div><!-- /footer -->
+    </div>
+    <!-- end event list page -->
+
+    <!-- start calendar page -->
+    <div data-role="page" id="calendar" data-theme="a">
+      <div data-role="header" data-id="searchHead">
+        <h1>BitLag</h1>
+        <a href="#" id="logout" data-icon="forward" class="ui-btn-right">Logout</a>
+    </div><!-- /header -->
+     <div data-role="content" >  
+    <div class="content-primary">
+      <ul id="groups_list" data-role="listview" data-theme="a" data-dividertheme="e" data-filter="true" data-filter-theme="a" data-filter-placeholder="Search groups..." data-split-icon="gear" data-split-theme="c">
+    </ul>
+    </div><!-- /content -->
+    </div>
+    <div data-role="footer" class="nav-glyphish-example" data-position="fixed" data-theme="c">
+    <div data-role="navbar" class="nav-glyphish-example" data-grid="b" >
+    <ul>
+          <li>
+            <a href="#" id="profile" data-icon="custom" data-transition="fade">Profile</a>
+          </li>
+          <li>
+            <a href="#" id="events" data-icon="custom" data-transition="fade">Events</a>
+          </li>
+          <li>
+            <a href="#" id="groups" data-icon="custom" data-transition="fade"  class="ui-btn-active">Groups</a>
+          </li>
+        </ul>
+    </div>
+  </div><!-- /footer -->
+    </div>
+    <!-- end calendar page -->
+</body>
+</html>

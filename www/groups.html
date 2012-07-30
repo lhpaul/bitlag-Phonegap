@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body onload="onBodyLoad()">
+    <div data-role="page" id="calendar-pg" data-theme="a">
+      <div data-role="header" data-id="searchHead">
+        <h1>iWuanaGo</h1>
+        <a href="#" id="logout" data-icon="forward" class="ui-btn-right">Logout</a>
+    </div><!-- /header -->
+     <div data-role="content" >  
+    <div class="content-primary">
+      <ul id="groups_list" data-role="listview" data-theme="a" data-dividertheme="e" data-filter="true" data-filter-theme="a" data-filter-placeholder="Search groups..." data-split-icon="gear" data-split-theme="c">
+    </ul>
+    </div><!-- /content -->
+    </div>
+    <div data-role="footer" class="nav-glyphish-example" data-position="fixed" data-theme="c">
+    <div data-role="navbar" class="nav-glyphish-example" data-grid="b" >
+    <ul>
+          <li>
+            <a href="index.html" id="map-btn" data-icon="custom" data-transition="fade">Map</a>
+          </li>
+          <li>
+            <a href="events.html" id="list-btn" data-icon="custom" data-transition="fade">Search</a>
+          </li>
+          <li>
+            <a href="#" id="calendar-btn" data-icon="custom" data-transition="fade"  class="ui-btn-active">Calendar</a>
+          </li>
+        </ul>
+    </div>
+  </div><!-- /footer -->
+    </div>
+  </body>
+</html>

@@ -35,6 +35,7 @@
 		08F292CD15BC892A00E67ABC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F292CC15BC892A00E67ABC /* AppDelegate.m */; };
 		08F292D015BC892A00E67ABC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F292CF15BC892A00E67ABC /* MainViewController.m */; };
 		08F292D215BC892A00E67ABC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08F292D115BC892A00E67ABC /* MainViewController.xib */; };
+		08F292DB15BC896B00E67ABC /* www in Resources */ = {isa = PBXBuildFile; fileRef = 08F292DA15BC896B00E67ABC /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,10 +53,10 @@
 		08F292A015BC892900E67ABC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		08F292A215BC892900E67ABC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		08F292A415BC892A00E67ABC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		08F292A815BC892A00E67ABC /* iWuanaGo-Info.plist */ = {isa = PBXFileReference; path = "iWuanaGo-Info.plist"; sourceTree = "<group>"; };
+		08F292A815BC892A00E67ABC /* iWuanaGo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iWuanaGo-Info.plist"; sourceTree = "<group>"; };
 		08F292AA15BC892A00E67ABC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08F292AC15BC892A00E67ABC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		08F292AE15BC892A00E67ABC /* iWuanaGo-Prefix.pch */ = {isa = PBXFileReference; path = "iWuanaGo-Prefix.pch"; sourceTree = "<group>"; };
+		08F292AE15BC892A00E67ABC /* iWuanaGo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iWuanaGo-Prefix.pch"; sourceTree = "<group>"; };
 		08F292AF15BC892A00E67ABC /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework; sourceTree = "<absolute>"; };
 		08F292B415BC892A00E67ABC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		08F292B815BC892A00E67ABC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -66,12 +67,13 @@
 		08F292C415BC892A00E67ABC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
 		08F292C615BC892A00E67ABC /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		08F292C815BC892A00E67ABC /* PhoneGap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PhoneGap.plist; sourceTree = "<group>"; };
-		08F292CB15BC892A00E67ABC /* AppDelegate.h */ = {isa = PBXFileReference; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		08F292CB15BC892A00E67ABC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		08F292CC15BC892A00E67ABC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		08F292CE15BC892A00E67ABC /* MainViewController.h */ = {isa = PBXFileReference; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		08F292CE15BC892A00E67ABC /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
 		08F292CF15BC892A00E67ABC /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
 		08F292D115BC892A00E67ABC /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
-		08F292D415BC892A00E67ABC /* README */ = {isa = PBXFileReference; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		08F292D415BC892A00E67ABC /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		08F292DA15BC896B00E67ABC /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		08F2927A15BC892900E67ABC = {
 			isa = PBXGroup;
 			children = (
+				08F292DA15BC896B00E67ABC /* www */,
 				08F292A615BC892A00E67ABC /* iWuanaGo */,
 				08F2928B15BC892900E67ABC /* Frameworks */,
 				08F2928915BC892900E67ABC /* Products */,
@@ -300,6 +303,7 @@
 				08F292C715BC892A00E67ABC /* Capture.bundle in Resources */,
 				08F292C915BC892A00E67ABC /* PhoneGap.plist in Resources */,
 				08F292D215BC892A00E67ABC /* MainViewController.xib in Resources */,
+				08F292DB15BC896B00E67ABC /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
