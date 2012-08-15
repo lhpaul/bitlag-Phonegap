@@ -20,8 +20,8 @@
 //  main.m
 //  iWuanaGo
 //
-//  Created by Hector Mohor on 22-07-12.
-//  Copyright Cot@cero 2012. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--  list -->
+  <script type="text/javascript" charset="utf-8" src="js/list.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div data-role="page" id="list-pg" data-theme="a">
+      <div data-role="header" data-id="searchHead">
+        <h1>iWuanaGo</h1>
+        <a href="#" id="logout" data-icon="forward" class="ui-btn-right">Logout</a>
+    </div><!-- /header -->
+     <div data-role="content" >
+    <div class="content-primary">
+       <div data-role="navbar" class="nav-glyphish-example" data-grid="d" >
+    <ul>
+      <li>
+            <a href="#" id="party-btn" data-icon="custom"  data-transition="fade">Party</a>
+          </li>
+          <li>
+            <a href="#" id="music-btn" data-icon="custom" data-transition="fade" class="ui-btn-active">Music</a>
+          </li>
+          <li>
+            <a href="#" id="cultural-btn" data-icon="custom" data-transition="fade">Cultural</a>
+          </li>
+          <li>
+            <a href="#" id="other-btn" data-icon="custom" data-transition="fade">Other</a>
+          </li>
+        </ul>
+    </div>
+      <ul id="events_list" data-role="listview" data-theme="a" data-dividertheme="e" data-filter="true" data-filter-theme="a" data-filter-placeholder="Search events..." data-split-icon="gear" data-split-theme="c">
+    </ul>
+    </div><!-- /content -->
+    </div>
+    <div data-role="footer" class="nav-glyphish-example" data-position="fixed" data-theme="c">
+    <div data-role="navbar" class="nav-glyphish-example" data-grid="b" >
+    <ul>
+          <li>
+            <a href="index.html" id="map-btn" data-icon="custom"  data-transition="fade">Map</a>
+          </li>
+          <li>
+            <a href="#" id="list-btn" data-icon="custom" data-transition="fade" class="ui-btn-active">Search</a>
+          </li>
+          <li>
+            <a href="calendar.html" id="calendar-btn" data-icon="custom" data-transition="fade">Calendar</a>
+          </li>
+        </ul>
+    </div>
+  </div><!-- /footer -->
+    </div>
+  </body>
+</html>

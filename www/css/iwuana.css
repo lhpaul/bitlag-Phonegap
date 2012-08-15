@@ -1,0 +1,51 @@
+/*start footer*/
+.nav-glyphish-example .ui-btn .ui-btn-inner {
+padding-top:40px!important
+}
+
+.nav-glyphish-example .ui-btn .ui-icon {
+width:30px!important;
+height:30px!important;
+margin-left:-15px!important;
+box-shadow:none!important;
+-moz-box-shadow:none!important;
+-webkit-box-shadow:none!important;
+-webkit-border-radius:0!important;
+border-radius:0!important
+}
+
+#list-btn .ui-icon {
+background:url(icons/06-magnify.png) 50% 50% no-repeat;
+background-size:24px 22px
+}
+
+#map-btn .ui-icon {
+background:url(icons/73-radar.png) 50% 50% no-repeat;
+background-size:24px 22px
+}
+
+#calendar-btn .ui-icon {
+background:url(icons/83-calendar.png) 50% 50% no-repeat;
+background-size:24px 24px
+}
+/*end footer*/
+/*start footer*/
+#party-btn .ui-icon {
+background:url(icons/88-beer-mug.png) 50% 50% no-repeat;
+background-size:24px 24px
+}
+
+#music-btn .ui-icon {
+background:url(icons/194-note-2.png) 50% 50% no-repeat;
+background-size:24px 24px
+}
+
+#cultural-btn .ui-icon {
+background:url(icons/138-scales.png) 50% 50% no-repeat;
+background-size:24px 24px
+}
+
+#other-btn .ui-icon {
+background:url(icons/88-beer-mug.png) 50% 50% no-repeat;
+background-size:24px 24px
+}

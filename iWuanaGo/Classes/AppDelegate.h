@@ -21,32 +21,25 @@
 //  AppDelegate.h
 //  iWuanaGo
 //
-//  Created by Hector Mohor on 22-07-12.
-//  Copyright Cot@cero 2012. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-#ifdef PHONEGAP_FRAMEWORK
-    #import <PhoneGap/PGViewController.h>
-#else
-    #import "PGViewController.h"
-#endif
+#import <Cordova/CDVViewController.h>
 
+@interface AppDelegate : NSObject < UIApplicationDelegate > {
 
-@interface AppDelegate : NSObject < UIApplicationDelegate, UIWebViewDelegate, PGCommandDelegate > {
-
-	NSString* invokeString;
 }
 
 // invoke string is passed to your app on launch, this is only valid if you 
-// edit FooBar.plist to add a protocol
+// edit iWuanaGo-Info.plist to add a protocol
 // a simple tutorial can be found here : 
 // http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
 
-@property (nonatomic, copy)  NSString* invokeString;
 @property (nonatomic, retain) IBOutlet UIWindow* window;
-@property (nonatomic, retain) IBOutlet PGViewController* viewController;
+@property (nonatomic, retain) IBOutlet CDVViewController* viewController;
 
 @end
 
