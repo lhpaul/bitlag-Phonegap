@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0855C82115D460E1000C4301 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0855C81F15D45FE3000C4301 /* MapKit.framework */; };
-		0855C82815D46129000C4301 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855C82315D46129000C4301 /* AsyncImageView.m */; };
-		0855C82915D46129000C4301 /* CDVAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855C82515D46129000C4301 /* CDVAnnotation.m */; };
-		0855C82A15D46129000C4301 /* MapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855C82715D46129000C4301 /* MapKit.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -82,12 +78,6 @@
 
 /* Begin PBXFileReference section */
 		0855C81F15D45FE3000C4301 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		0855C82215D46129000C4301 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
-		0855C82315D46129000C4301 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
-		0855C82415D46129000C4301 /* CDVAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVAnnotation.h; sourceTree = "<group>"; };
-		0855C82515D46129000C4301 /* CDVAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVAnnotation.m; sourceTree = "<group>"; };
-		0855C82615D46129000C4301 /* MapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKit.h; sourceTree = "<group>"; };
-		0855C82715D46129000C4301 /* MapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapKit.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -137,7 +127,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0855C82115D460E1000C4301 /* MapKit.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -275,12 +264,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				0855C82215D46129000C4301 /* AsyncImageView.h */,
-				0855C82315D46129000C4301 /* AsyncImageView.m */,
-				0855C82415D46129000C4301 /* CDVAnnotation.h */,
-				0855C82515D46129000C4301 /* CDVAnnotation.m */,
-				0855C82615D46129000C4301 /* MapKit.h */,
-				0855C82715D46129000C4301 /* MapKit.m */,
 			);
 			name = Plugins;
 			path = iWuanaGo/Plugins;
@@ -461,9 +444,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				0855C82815D46129000C4301 /* AsyncImageView.m in Sources */,
-				0855C82915D46129000C4301 /* CDVAnnotation.m in Sources */,
-				0855C82A15D46129000C4301 /* MapKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

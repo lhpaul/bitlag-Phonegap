@@ -23,9 +23,6 @@
     loadCalendar: function() {
       Core.calendar.loaded = true;
       scheduler.config.readonly = true;
-      scheduler.xy.month_tab = 0;
-      scheduler.xy.day_tab = 1;
-      scheduler.xy.list_tab = 1;
       $("#scheduler").height(Core.body_height);
       dhx.ready(function() {
         dhx.ui({

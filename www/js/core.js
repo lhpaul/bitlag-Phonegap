@@ -3,7 +3,7 @@
   var Core = Core || {};
 
   Core = {
-
+    events: [],
     init: function (){
       Core.bindEvents();
       Core.body_height = document.body.offsetHeight - ($("#header").height() + $("#footer").height());
@@ -11,12 +11,12 @@
     },
 
     bindEvents: function() {
-      $('#logout').live('click',function(){
-        Core.auth.logout();
-        return false;
-      });
+    },
 
-
+    request_events: function(coords, filter, limit, radius, callbacks){
+      var ajax_url = 'events',
+          ajax_data = 'filter='+filter+'&=limit='+limit+'&radius='+radius+'&lon='+coords.longitude+'&lat='+coords.latitude;
+        Core.api.submit(ajax_url, ajax_data, callbacks);
     },
 
     api: {
@@ -34,8 +34,8 @@
 
           dataType: "json",
 
-          //url: "http://paulgrass.herokuapp.com/api/" + ajax_url,
-          url: "http://localhost:3000/api/" + ajax_url,     
+          url: "http://iwuanago.com/api/" + ajax_url,
+          // url: "http://localhost:3000/api/" + ajax_url,     
           cache: false,
 
           //data: ajax_data,

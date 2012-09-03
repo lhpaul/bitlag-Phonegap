@@ -49,3 +49,23 @@ background-size:24px 24px
 background:url(icons/88-beer-mug.png) 50% 50% no-repeat;
 background-size:24px 24px
 }
+#flipbox {
+	background-color: black;
+	height: 20px;
+	text-align: center;
+}
+.ui-icon-curl {
+	background: url("icons/UIButtonBarPageCurlSelected.png") 50% 50% no-repeat;
+	/*background-size: 23px 24px;*/
+	width: 24px;
+	height: 24px;
+}
+.ui-icon-locate {
+	background: url("icons/74-location.png") 50% 50% no-repeat;
+	/*background-size: 23px 24px;*/
+	width: 24px;
+	height: 24px;
+	/*margin-left: 5px;*/
+}
+
+.top-button{height:31px;width:31px;}
